@@ -37,8 +37,9 @@
     
     
     
-<script src = 'VisualizationDataProject/data/Mydata.js'></script>
-<script type="text/javascript">
+
+    
+    //<script type="text/javascript">
    
    var graphSelector = document.getElementById('graph-selector')
       function selectgraph() {
@@ -412,6 +413,18 @@
     
     
     
+    
+    
+    
+    
+    var myCategories = mydata.map()
+    
+    myCategories 
+    
+    
+    
+    
+    
  function linegraph(){
      
      
@@ -426,11 +439,14 @@
         text: 'This graph shows the amount of females and males, that were able to take the survey.'
     },
     xAxis: {
-        type: 'Zip Code'
+        type: 'Zip Code',
+        categories:
+        
     },
     yAxis: {
         title: {
             text: 'Number of participants'
+            
         }
     },
     plotOptions: {
